@@ -27,7 +27,6 @@
 		19AF1D3622C873AE009E4967 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */; };
 		19AF1D3822C88031009E4967 /* FirebaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3722C88031009E4967 /* FirebaseApi.swift */; };
 		19AF1D3A22C88B31009E4967 /* ProfileMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3922C88B31009E4967 /* ProfileMenuBar.swift */; };
-		19AF1D3E22C89E12009E4967 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3D22C89E12009E4967 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +52,6 @@
 		19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		19AF1D3722C88031009E4967 /* FirebaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApi.swift; sourceTree = "<group>"; };
 		19AF1D3922C88B31009E4967 /* ProfileMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuBar.swift; sourceTree = "<group>"; };
-		19AF1D3D22C89E12009E4967 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +141,6 @@
 				19AF1D1C22C850CD009E4967 /* ProfileViewController.swift */,
 				19AF1D2A22C85D74009E4967 /* ProfileData.swift */,
 				19AF1D3922C88B31009E4967 /* ProfileMenuBar.swift */,
-				19AF1D3D22C89E12009E4967 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -256,7 +253,6 @@
 				19AF1D2722C8547F009E4967 /* MessageViewController.swift in Sources */,
 				19AF1D3222C87026009E4967 /* Extension+UILabel.swift in Sources */,
 				19AF1CFD22C84BAA009E4967 /* AppDelegate.swift in Sources */,
-				19AF1D3E22C89E12009E4967 /* ProfileHeaderView.swift in Sources */,
 				19AF1D3A22C88B31009E4967 /* ProfileMenuBar.swift in Sources */,
 				19AF1D1522C85051009E4967 /* HomeViewController.swift in Sources */,
 				19AF1D1F22C850F1009E4967 /* MainTabBarController.swift in Sources */,

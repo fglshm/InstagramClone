@@ -19,12 +19,13 @@ class MainPageViewController: UIPageViewController {
         
         dataSource = self
         
-        
         cameraViewController = CameraViewController()
         mainTabbarController = MainTabBarController()
         messageViewController = MessageViewController()
         
-        setViewControllers([mainTabbarController], direction: .forward, animated: true, completion: nil)
+        let mainNavController = UINavigationController(rootViewController: mainTabbarController)
+        
+        setViewControllers([mainNavController], direction: .forward, animated: true, completion: nil)
     }
     
 }

@@ -19,6 +19,14 @@
 		19AF1D2122C853FD009E4967 /* MainPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2022C853FD009E4967 /* MainPagerViewController.swift */; };
 		19AF1D2422C8546D009E4967 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2322C8546D009E4967 /* CameraViewController.swift */; };
 		19AF1D2722C8547F009E4967 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2622C8547F009E4967 /* MessageViewController.swift */; };
+		19AF1D2922C85D36009E4967 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2822C85D36009E4967 /* ProfileHeaderView.swift */; };
+		19AF1D2B22C85D74009E4967 /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2A22C85D74009E4967 /* ProfileData.swift */; };
+		19AF1D2E22C85F54009E4967 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2D22C85F54009E4967 /* Extension+UIView.swift */; };
+		19AF1D3022C86E0B009E4967 /* Extension+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D2F22C86E0B009E4967 /* Extension+UIStackView.swift */; };
+		19AF1D3222C87026009E4967 /* Extension+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3122C87026009E4967 /* Extension+UILabel.swift */; };
+		19AF1D3422C87136009E4967 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3322C87136009E4967 /* Extension+UIButton.swift */; };
+		19AF1D3622C873AE009E4967 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */; };
+		19AF1D3822C88031009E4967 /* FirebaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3722C88031009E4967 /* FirebaseApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +44,14 @@
 		19AF1D2022C853FD009E4967 /* MainPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPagerViewController.swift; sourceTree = "<group>"; };
 		19AF1D2322C8546D009E4967 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		19AF1D2622C8547F009E4967 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		19AF1D2822C85D36009E4967 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		19AF1D2A22C85D74009E4967 /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		19AF1D2D22C85F54009E4967 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		19AF1D2F22C86E0B009E4967 /* Extension+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIStackView.swift"; sourceTree = "<group>"; };
+		19AF1D3122C87026009E4967 /* Extension+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UILabel.swift"; sourceTree = "<group>"; };
+		19AF1D3322C87136009E4967 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
+		19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		19AF1D3722C88031009E4967 /* FirebaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 		19AF1CFB22C84BAA009E4967 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
+				19AF1D2C22C85F45009E4967 /* Extensions */,
 				19AF1D2522C85475009E4967 /* Message */,
 				19AF1D2222C85461009E4967 /* Camera */,
 				19AF1D1322C8502E009E4967 /* Profile */,
@@ -81,6 +98,7 @@
 				19AF1D0822C84BAB009E4967 /* Info.plist */,
 				19AF1D1E22C850F1009E4967 /* MainTabBarController.swift */,
 				19AF1D2022C853FD009E4967 /* MainPagerViewController.swift */,
+				19AF1D3722C88031009E4967 /* FirebaseApi.swift */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -121,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				19AF1D1C22C850CD009E4967 /* ProfileViewController.swift */,
+				19AF1D2822C85D36009E4967 /* ProfileHeaderView.swift */,
+				19AF1D2A22C85D74009E4967 /* ProfileData.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -139,6 +159,18 @@
 				19AF1D2622C8547F009E4967 /* MessageViewController.swift */,
 			);
 			path = Message;
+			sourceTree = "<group>";
+		};
+		19AF1D2C22C85F45009E4967 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19AF1D2D22C85F54009E4967 /* Extension+UIView.swift */,
+				19AF1D2F22C86E0B009E4967 /* Extension+UIStackView.swift */,
+				19AF1D3122C87026009E4967 /* Extension+UILabel.swift */,
+				19AF1D3322C87136009E4967 /* Extension+UIButton.swift */,
+				19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,15 +244,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				19AF1D1D22C850CD009E4967 /* ProfileViewController.swift in Sources */,
+				19AF1D3622C873AE009E4967 /* Extension+UIImageView.swift in Sources */,
 				19AF1D1922C8509A009E4967 /* PostViewController.swift in Sources */,
+				19AF1D3822C88031009E4967 /* FirebaseApi.swift in Sources */,
+				19AF1D2922C85D36009E4967 /* ProfileHeaderView.swift in Sources */,
 				19AF1D1722C85083009E4967 /* SearchViewController.swift in Sources */,
 				19AF1D2122C853FD009E4967 /* MainPagerViewController.swift in Sources */,
+				19AF1D3422C87136009E4967 /* Extension+UIButton.swift in Sources */,
 				19AF1D2722C8547F009E4967 /* MessageViewController.swift in Sources */,
+				19AF1D3222C87026009E4967 /* Extension+UILabel.swift in Sources */,
 				19AF1CFD22C84BAA009E4967 /* AppDelegate.swift in Sources */,
 				19AF1D1522C85051009E4967 /* HomeViewController.swift in Sources */,
 				19AF1D1F22C850F1009E4967 /* MainTabBarController.swift in Sources */,
+				19AF1D3022C86E0B009E4967 /* Extension+UIStackView.swift in Sources */,
 				19AF1D1B22C850AC009E4967 /* LikeViewController.swift in Sources */,
 				19AF1D2422C8546D009E4967 /* CameraViewController.swift in Sources */,
+				19AF1D2B22C85D74009E4967 /* ProfileData.swift in Sources */,
+				19AF1D2E22C85F54009E4967 /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

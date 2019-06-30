@@ -30,4 +30,8 @@ extension UIStackView {
         return self
     }
     
+    func updateContentView() {
+        contentSize.height = subviews.sorted(by: { $0.frame.maxY < $1.frame.maxY }).last?.frame.maxY ?? contentSize.height
+    }
+
 }

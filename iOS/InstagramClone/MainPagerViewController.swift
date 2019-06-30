@@ -34,7 +34,7 @@ extension MainPageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         if (viewController.isKind(of: CameraViewController.self)) {
             return mainTabbarController
-        } else if (viewController.isKind(of: MainTabBarController.self)) {
+        } else if (viewController.isKind(of: UINavigationController.self)) {
             return messageViewController
         } else {
             return nil
@@ -44,7 +44,7 @@ extension MainPageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if (viewController.isKind(of: MessageViewController.self)) {
             return mainTabbarController
-        } else if (viewController.isKind(of: MainTabBarController.self)) {
+        } else if (viewController.isKind(of: UINavigationController.self)) {
             return cameraViewController
         } else {
             return nil

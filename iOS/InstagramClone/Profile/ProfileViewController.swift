@@ -17,6 +17,11 @@ class ProfileViewController: UIViewController {
     fileprivate let imageWidth: CGFloat = UIScreen.main.bounds.width / 4
     fileprivate let padding: CGFloat = 16
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+    }
+    
     lazy var profileImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFill
@@ -27,6 +32,15 @@ class ProfileViewController: UIViewController {
         iv.image = #imageLiteral(resourceName: "person11")
         return iv
     }()
+    
+    lazy var p = UIImageView()
+        .setContentMode(.scaleAspectFill)
+        .setBorderColor(.lightGray)
+        .setBorderWidth(1)
+        .setCornerRadius(self.imageWidth / 2)
+        .setMasksToBounds(true)
+        .setCustomImage(#imageLiteral(resourceName: "person11"))
+        
     
     let plusButton = UIButton(type: .system)
         .setCustomImage(#imageLiteral(resourceName: "plus"), .normal)
@@ -69,8 +83,7 @@ class ProfileViewController: UIViewController {
             .setAlignment(.center)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    fileprivate func setupView() {
         view.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1)
         
         view.addSubview(myScrollView)

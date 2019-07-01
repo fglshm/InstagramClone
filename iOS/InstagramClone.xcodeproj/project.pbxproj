@@ -27,6 +27,8 @@
 		19AF1D3622C873AE009E4967 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */; };
 		19AF1D3822C88031009E4967 /* FirebaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3722C88031009E4967 /* FirebaseApi.swift */; };
 		19AF1D3A22C88B31009E4967 /* ProfileMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3922C88B31009E4967 /* ProfileMenuBar.swift */; };
+		19AF1D4022C8E140009E4967 /* Extension+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D3F22C8E140009E4967 /* Extension+UIScrollView.swift */; };
+		19AF1D4222C8E447009E4967 /* ProfileMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AF1D4122C8E447009E4967 /* ProfileMenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		19AF1D3722C88031009E4967 /* FirebaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApi.swift; sourceTree = "<group>"; };
 		19AF1D3922C88B31009E4967 /* ProfileMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuBar.swift; sourceTree = "<group>"; };
+		19AF1D3F22C8E140009E4967 /* Extension+UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScrollView.swift"; sourceTree = "<group>"; };
+		19AF1D4122C8E447009E4967 /* ProfileMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 				19AF1D1C22C850CD009E4967 /* ProfileViewController.swift */,
 				19AF1D2A22C85D74009E4967 /* ProfileData.swift */,
 				19AF1D3922C88B31009E4967 /* ProfileMenuBar.swift */,
+				19AF1D4122C8E447009E4967 /* ProfileMenuCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				19AF1D3122C87026009E4967 /* Extension+UILabel.swift */,
 				19AF1D3322C87136009E4967 /* Extension+UIButton.swift */,
 				19AF1D3522C873AE009E4967 /* Extension+UIImageView.swift */,
+				19AF1D3F22C8E140009E4967 /* Extension+UIScrollView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 				19AF1D1D22C850CD009E4967 /* ProfileViewController.swift in Sources */,
 				19AF1D3622C873AE009E4967 /* Extension+UIImageView.swift in Sources */,
 				19AF1D1922C8509A009E4967 /* PostViewController.swift in Sources */,
+				19AF1D4022C8E140009E4967 /* Extension+UIScrollView.swift in Sources */,
 				19AF1D3822C88031009E4967 /* FirebaseApi.swift in Sources */,
 				19AF1D1722C85083009E4967 /* SearchViewController.swift in Sources */,
 				19AF1D2122C853FD009E4967 /* MainPagerViewController.swift in Sources */,
@@ -260,6 +267,7 @@
 				19AF1D1B22C850AC009E4967 /* LikeViewController.swift in Sources */,
 				19AF1D2422C8546D009E4967 /* CameraViewController.swift in Sources */,
 				19AF1D2B22C85D74009E4967 /* ProfileData.swift in Sources */,
+				19AF1D4222C8E447009E4967 /* ProfileMenuCell.swift in Sources */,
 				19AF1D2E22C85F54009E4967 /* Extension+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

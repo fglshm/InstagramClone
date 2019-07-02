@@ -4,10 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <FrameLayout
+        android:id="@+id/container_fragment_home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/navigation_fragment_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_fragment_home"
         android:layout_width="0dp"
-        android:layout_height="56dp"
+        android:layout_height="50dp"
         android:background="@android:color/white"
         app:itemBackground="@android:color/white"
         app:itemIconSize="24dp"

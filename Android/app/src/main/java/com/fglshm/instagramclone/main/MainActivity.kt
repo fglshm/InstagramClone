@@ -6,8 +6,7 @@ import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
-
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivity(), MainContract.View {
 
     override val logTag: String = MainActivity::class.java.simpleName
     override fun getLayout(): Int = R.layout.activity_main
@@ -26,6 +25,10 @@ class MainActivity : BaseActivity() {
             offscreenPageLimit = 3
             currentItem = 1
         }
+    }
+
+    override fun setViewPagerState(state: Boolean) {
+        viewPager.setPagingEnabled(state)
     }
 
 }

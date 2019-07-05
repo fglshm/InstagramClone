@@ -8,20 +8,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.fglshm.instagramclone.main.MainActivity
 
 abstract class BaseFragment : Fragment() {
 
     abstract val logTag: String
     abstract fun getLayout(): Int
 
-    protected var mContext: Context? = null
-    protected var mActivity: AppCompatActivity? = null
+    protected lateinit var mContext: Context
+    protected lateinit var mActivity: AppCompatActivity
 
-    override fun onAttach(context: Context?) {
+    override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
-        this.mActivity = context as? MainActivity
+        this.mActivity = context as AppCompatActivity
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

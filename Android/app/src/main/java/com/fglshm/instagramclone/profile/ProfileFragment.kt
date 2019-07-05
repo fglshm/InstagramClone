@@ -29,7 +29,7 @@ class ProfileFragment : BaseFragment() {
 
     class PagerAdapter(fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
 
-        override fun getItem(position: Int): Fragment = Fragment()
+        override fun getItem(position: Int): Fragment = ProfileGalleryFragment()
         override fun getCount(): Int = 2
 
     }

@@ -7,6 +7,7 @@ import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
 import com.fglshm.instagramclone.main.MainActivity
 import com.fglshm.instagramclone.main.MainContract
+import com.fglshm.instagramclone.profile.ProfileFragment
 import com.fglshm.instagramclone.timeline.TimelineFragment
 import kotlinx.android.synthetic.main.fragment_home.*
 
@@ -20,6 +21,7 @@ class HomeFragment : BaseFragment() {
     private val bottomNavigation by lazy { navigation_fragment_home }
 
     private val timelineFragment by lazy { TimelineFragment() }
+    private val profileFragment by lazy { ProfileFragment() }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -54,6 +56,9 @@ class HomeFragment : BaseFragment() {
                 }
                 else -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
+                    childFragmentManager.beginTransaction()
+                        .add(containerRes, profileFragment, profileFragment::class.java.simpleName)
+                        .commit()
                     true
                 }
             }

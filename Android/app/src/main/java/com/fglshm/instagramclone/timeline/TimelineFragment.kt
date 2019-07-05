@@ -7,4 +7,5 @@ class TimelineFragment : BaseFragment() {
 
     override val logTag: String = TimelineFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_timeline
+
 }

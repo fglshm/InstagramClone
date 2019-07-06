@@ -23,5 +23,4 @@ class ProfileFragment : BaseFragment() {
         tab.tabRippleColor = null
     }
 
-
 }

@@ -6,20 +6,20 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
 import com.fglshm.instagramclone.extension.transact
-import kotlinx.android.synthetic.main.fragment_profile_gallery.*
+import kotlinx.android.synthetic.main.fragment_profile_tags.*
 
-class ProfileGalleryFragment : BaseFragment() {
+class ProfileTagsFragment : BaseFragment() {
 
-    override val logTag: String = ProfileGalleryFragment::class.java.simpleName
-    override fun getLayout(): Int = R.layout.fragment_profile_gallery
+    override val logTag: String = ProfileTagsFragment::class.java.simpleName
+    override fun getLayout(): Int = R.layout.fragment_profile_tags
 
-    private val mRecyclerView by lazy { recycler_fragment_profile_gallery }
+    private val mRecyclerView by lazy { recycler_fragment_profile_tags }
     private val mAdapter by lazy { ProfileGalleryRecyclerAdapter(mContext) }
 
     private var hasPost = false
 
     companion object {
-        fun newInstance() = ProfileGalleryFragment()
+        fun newInstance() = ProfileTagsFragment()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,9 +38,9 @@ class ProfileGalleryFragment : BaseFragment() {
     private fun setNoPost() {
         childFragmentManager.transact {
             replace(
-                R.id.container_fragment_profile_gallery,
-                ProfileNoPostFragment.newInstance(),
-                ProfileNoPostFragment::class.java.simpleName
+                R.id.container_fragment_profile_tags,
+                ProfileNoTagFragment.newInstance(),
+                ProfileNoTagFragment::class.java.simpleName
             )
         }
     }

@@ -9,13 +9,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:src="@drawable/ic_no_post" />
+        android:src="@drawable/ic_no_tag" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="No Posts Yet"
+        android:text="Photos and Videos of You"
         android:textColor="@color/colorBlack"
         android:textSize="24sp" />
 
@@ -25,7 +25,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:text="When people post, they'll appear here."
+        android:text="When people tag you in photos and videos, they'll appear here."
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp" />
 

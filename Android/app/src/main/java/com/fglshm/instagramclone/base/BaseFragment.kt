@@ -27,7 +27,7 @@ abstract class BaseFragment : Fragment() {
         return inflater.inflate(getLayout(), container, false)
     }
 
-    fun log(message: Any?) {
+    fun showLog(message: Any?) {
         Log.d(logTag, message?.toString() ?: "no message")
     }
 

@@ -40,22 +40,27 @@ class HomeFragment : BaseFragment() {
             when (it.itemId) {
                 R.id.navigation_home -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(true)
+                    ((mActivity as MainActivity) as MainContract.View).setDrawerLock(true)
                     true
                 }
                 R.id.navigation_search -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
+                    ((mActivity as MainActivity) as MainContract.View).setDrawerLock(true)
                     true
                 }
                 R.id.navigation_post -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
+                    ((mActivity as MainActivity) as MainContract.View).setDrawerLock(true)
                     false
                 }
                 R.id.navigation_like -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
+                    ((mActivity as MainActivity) as MainContract.View).setDrawerLock(true)
                     true
                 }
                 else -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
+                    ((mActivity as MainActivity) as MainContract.View).setDrawerLock(false)
                     childFragmentManager.beginTransaction()
                         .add(containerRes, profileFragment, profileFragment::class.java.simpleName)
                         .commit()

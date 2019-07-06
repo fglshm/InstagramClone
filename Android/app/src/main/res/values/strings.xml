@@ -5,4 +5,6 @@
     <string name="post">Post</string>
     <string name="like">Like</string>
     <string name="profile">Profile</string>
+    <string name="open_drawer">open drawer</string>
+    <string name="close_drawer">close drawer</string>
 </resources>

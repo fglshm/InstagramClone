@@ -10,7 +10,7 @@ abstract class BaseRecyclerAdapter<T> : RecyclerView.Adapter<ItemViewHolder>() {
     abstract val logTag: String
     abstract fun getLayout(): Int
 
-    private val itemList: MutableList<T> = mutableListOf()
+    protected val itemList: MutableList<T?> = mutableListOf()
 
     override fun getItemCount(): Int = itemList.size
 
@@ -19,11 +19,11 @@ abstract class BaseRecyclerAdapter<T> : RecyclerView.Adapter<ItemViewHolder>() {
         return ItemViewHolder(view)
     }
 
-    fun add(what: T) {
+    fun add(what: T?) {
         itemList.add(what)
     }
 
-    fun addAll(what: List<T>) {
+    fun addAll(what: List<T?>) {
         itemList.addAll(what)
     }
 

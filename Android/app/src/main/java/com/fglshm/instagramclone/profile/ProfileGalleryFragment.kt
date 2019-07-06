@@ -16,7 +16,7 @@ class ProfileGalleryFragment : BaseFragment() {
     private val mRecyclerView by lazy { recycler_fragment_profile_gallery }
     private val mAdapter by lazy { ProfileGalleryRecyclerAdapter(mContext) }
 
-    private var hasPost = false
+    private var hasPost = true
 
     companion object {
         fun newInstance() = ProfileGalleryFragment()

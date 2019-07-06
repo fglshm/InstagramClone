@@ -1,5 +1,6 @@
 package com.fglshm.instagramclone.profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.postDelayed
@@ -7,6 +8,8 @@ import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
 import com.fglshm.instagramclone.extension.setInvisible
 import com.fglshm.instagramclone.extension.setVisible
+import com.fglshm.instagramclone.main.MainActivity
+import com.fglshm.instagramclone.profile.profileedit.ProfileEditActivity
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : BaseFragment() {
@@ -17,6 +20,7 @@ class ProfileFragment : BaseFragment() {
     private val mTab by lazy { tab_profile }
     private val mViewPager by lazy { pager_profile }
     private val mProgressBar by lazy { progress_fragment_profile }
+    private val mEditButton by lazy { button_edit_profile }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -31,6 +35,15 @@ class ProfileFragment : BaseFragment() {
             mTab.getTabAt(0)?.setIcon(R.drawable.ic_grid)
             mTab.getTabAt(1)?.setIcon(R.drawable.ic_people)
             mTab.tabRippleColor = null
+        }
+
+        mEditButton.setOnClickListener {
+            val intent = Intent(mContext, ProfileEditActivity::class.java)
+            (mActivity as MainActivity).apply {
+                startActivity(intent)
+                overridePendingTransition(R.anim.enter_from_bottom, R.anim.fade_out)
+            }
+
         }
     }
 

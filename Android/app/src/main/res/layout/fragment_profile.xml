@@ -248,10 +248,20 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/pager_profile"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:overScrollMode="never"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_fragment_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:indeterminateTint="@color/colorLightGray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

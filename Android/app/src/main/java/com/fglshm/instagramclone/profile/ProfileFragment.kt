@@ -1,15 +1,9 @@
 package com.fglshm.instagramclone.profile
 
 import android.content.Intent
-import android.os.AsyncTask
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.core.view.postDelayed
-import com.amazonaws.http.HttpMethodName
-import com.amazonaws.mobileconnectors.apigateway.ApiClientFactory
-import com.amazonaws.mobileconnectors.apigateway.ApiRequest
-import com.amazonaws.mobileconnectors.apigateway.ApiResponse
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
 import com.fglshm.instagramclone.extension.setInvisible
@@ -17,11 +11,7 @@ import com.fglshm.instagramclone.extension.setVisible
 import com.fglshm.instagramclone.main.MainActivity
 import com.fglshm.instagramclone.profile.profileedit.ProfileEditActivity
 import com.fglshm.instagramclone.register.RegisterActivity
-import com.google.gson.Gson
-import jp.co.test.TestapiClient
 import kotlinx.android.synthetic.main.fragment_profile.*
-import java.io.BufferedReader
-import java.lang.Exception
 
 class ProfileFragment : BaseFragment() {
 

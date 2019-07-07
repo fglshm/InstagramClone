@@ -37,9 +37,4 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:3.0.0'
 
-    implementation 'com.github.kittinunf.fuel:fuel:1.15.1'
-    implementation 'com.github.kittinunf.fuel:fuel-android:1.15.1'
-
-    implementation 'com.amazonaws:aws-android-sdk-apigateway-core:2.3.2'
-
 }

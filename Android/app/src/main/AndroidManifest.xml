@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.fglshm.instagramclone">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:name=".application.App"
         android:allowBackup="true"
@@ -26,6 +29,7 @@
         <activity
             android:name=".profile.profileedit.ProfileEditActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".register.RegisterActivity" />
 
     </application>
 

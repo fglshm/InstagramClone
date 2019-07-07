@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 
@@ -16,11 +17,13 @@ abstract class BaseFragment : Fragment() {
 
     protected lateinit var mContext: Context
     protected lateinit var mActivity: AppCompatActivity
+    protected lateinit var mInputMethodManager: InputMethodManager
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
         this.mContext = context
         this.mActivity = context as AppCompatActivity
+        this.mInputMethodManager = this.mActivity.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

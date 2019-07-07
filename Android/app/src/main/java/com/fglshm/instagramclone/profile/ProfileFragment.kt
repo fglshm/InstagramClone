@@ -11,6 +11,9 @@ import com.fglshm.instagramclone.extension.setVisible
 import com.fglshm.instagramclone.main.MainActivity
 import com.fglshm.instagramclone.profile.profileedit.ProfileEditActivity
 import com.fglshm.instagramclone.register.RegisterActivity
+import com.github.kittinunf.fuel.android.extension.responseJson
+import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : BaseFragment() {

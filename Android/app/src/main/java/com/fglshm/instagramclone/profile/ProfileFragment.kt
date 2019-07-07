@@ -1,8 +1,11 @@
 package com.fglshm.instagramclone.profile
 
+import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import androidx.core.view.postDelayed
 import com.fglshm.instagramclone.R
@@ -48,8 +51,14 @@ class ProfileFragment : BaseFragment() {
         }
 
         mMenuButton.setOnClickListener {
-            (mActivity as MainActivity).openDrawer()
+            showMenuPopup()
         }
+    }
+
+    @SuppressLint("InflateParams")
+    private fun showMenuPopup() {
+        val builder = AlertDialog.Builder(mContext)
+        val popupView = LayoutInflater.from(mContext).inflate(R.layout.popup_menu, null)
     }
 
 }

@@ -6,9 +6,6 @@ interface MainContract {
 
         fun setViewPagerState(state: Boolean)
 
-        fun openDrawer()
-
-        fun setDrawerLock(state: Boolean)
     }
 
 }

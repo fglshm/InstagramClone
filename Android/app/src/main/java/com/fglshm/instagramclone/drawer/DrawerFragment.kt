@@ -2,6 +2,7 @@ package com.fglshm.instagramclone.drawer
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
 import com.fglshm.instagramclone.base.BaseRecyclerAdapter
@@ -20,6 +21,9 @@ class DrawerFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
+        view.setOnClickListener {
+            showLog("HHH???")
+        }
     }
 
     private fun setupRecyclerView() {
@@ -28,6 +32,9 @@ class DrawerFragment : BaseFragment() {
             setHasFixedSize(true)
         }
         mAdapter.addAll(drawerItems())
+        mRecyclerView.setOnClickListener {
+            showLog("[ mRecyclerView ]")
+        }
     }
 
     private fun drawerItems(): List<DrawerItem> = listOf(
@@ -50,7 +57,7 @@ class DrawerFragment : BaseFragment() {
                 img_recyclerview_fragment_drawer.setImageResource(item?.res ?: 0)
                 txt_recyclerview_fragment_drawer.text = item?.title
                 setOnClickListener {
-                    showLog(position)
+                    Toast.makeText(context, "$position", Toast.LENGTH_SHORT).show()
                 }
             }
         }

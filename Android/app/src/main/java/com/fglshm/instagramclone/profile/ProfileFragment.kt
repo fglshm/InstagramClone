@@ -1,7 +1,11 @@
 package com.fglshm.instagramclone.profile
 
+import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.view.LayoutInflater
 import android.view.View
 import androidx.core.view.postDelayed
 import com.fglshm.instagramclone.R
@@ -21,6 +25,7 @@ class ProfileFragment : BaseFragment() {
     private val mViewPager by lazy { pager_profile }
     private val mProgressBar by lazy { progress_fragment_profile }
     private val mEditButton by lazy { button_edit_profile }
+    private val mMenuButton by lazy { img_btn_menu_fragment_profile }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -43,8 +48,17 @@ class ProfileFragment : BaseFragment() {
                 startActivity(intent)
                 overridePendingTransition(R.anim.enter_from_bottom, R.anim.fade_out)
             }
-
         }
+
+        mMenuButton.setOnClickListener {
+            showMenuPopup()
+        }
+    }
+
+    @SuppressLint("InflateParams")
+    private fun showMenuPopup() {
+        val builder = AlertDialog.Builder(mContext)
+        val popupView = LayoutInflater.from(mContext).inflate(R.layout.popup_menu, null)
     }
 
 }

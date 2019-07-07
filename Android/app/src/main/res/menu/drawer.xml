@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_archive"
+        android:icon="@drawable/ic_archive"
+        android:title="Archive" />
+
+    <item
+        android:id="@+id/drawer_nametag"
+        android:icon="@drawable/ic_focus"
+        android:title="Nametag" />
+
+    <item
+        android:id="@+id/drawer_list"
+        android:icon="@drawable/ic_list"
+        android:title="Saved" />
+
+    <item
+        android:id="@+id/drawer_close_friends"
+        android:icon="@drawable/ic_close_friend"
+        android:title="Close Friends" />
+
+    <item
+        android:id="@+id/drawer_new_people"
+        android:icon="@drawable/ic_add_user"
+        android:title="Archive" />
+
+    <item
+        android:id="@+id/drawer_facebook"
+        android:icon="@drawable/ic_facebook"
+        android:title="Open Facebook" />
+
+
+</menu>

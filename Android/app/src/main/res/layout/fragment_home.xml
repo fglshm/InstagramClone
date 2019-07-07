@@ -16,7 +16,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_fragment_home"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:background="@android:color/white"
         app:itemBackground="@android:color/white"
         app:itemIconSize="24dp"

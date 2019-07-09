@@ -22,10 +22,17 @@ abstract class BaseRecyclerAdapter<T> : RecyclerView.Adapter<ItemViewHolder>() {
 
     fun add(what: T?) {
         itemList.add(what)
+        notifyItemInserted(itemCount)
     }
 
     fun addAll(what: List<T?>) {
         itemList.addAll(what)
+        notifyDataSetChanged()
+    }
+
+    fun clear() {
+        itemList.clear()
+        notifyDataSetChanged()
     }
 
     fun showLog(message: Any?) {

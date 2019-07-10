@@ -1,9 +1,9 @@
 package com.fglshm.instagramclone.base
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.fglshm.instagramclone.utils.Utils
+import com.fglshm.extensions2.screenHeight
+import com.fglshm.extensions2.screenWidth
 
 abstract class BaseActivity : AppCompatActivity() {
 
@@ -16,12 +16,8 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getLayout())
-        screenWidth = Utils.Size.getScreenWidth(this)
-        screenHeight = Utils.Size.getScreenHeight(this)
-    }
-
-    fun showLog(message: Any?) {
-        Log.d(logTag, message?.toString() ?: "no message")
+        screenWidth = screenWidth()
+        screenHeight = screenHeight()
     }
 
 }

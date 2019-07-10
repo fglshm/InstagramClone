@@ -3,9 +3,9 @@ package com.fglshm.instagramclone.profile
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
+import com.fglshm.extensions2.transact
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
-import com.fglshm.instagramclone.extension.transact
 import kotlinx.android.synthetic.main.fragment_profile_tags.*
 
 class ProfileTagsFragment : BaseFragment() {

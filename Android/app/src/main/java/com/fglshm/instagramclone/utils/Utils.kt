@@ -1,29 +1,6 @@
 package com.fglshm.instagramclone.utils
 
-import android.util.DisplayMetrics
-import androidx.appcompat.app.AppCompatActivity
-
 object Utils {
-
-    object Size {
-
-        fun getScreenWidth(context: AppCompatActivity): Int {
-            val displayMetrics = DisplayMetrics()
-            context.windowManager.defaultDisplay.getMetrics(displayMetrics)
-            return displayMetrics.widthPixels
-        }
-
-        fun getScreenHeight(context: AppCompatActivity): Int {
-            val displayMetrics = DisplayMetrics()
-            context.windowManager.defaultDisplay.getMetrics(displayMetrics)
-            return displayMetrics.heightPixels
-        }
-
-        fun getScale(context: AppCompatActivity): Int {
-            return context.resources.displayMetrics.density.toInt()
-        }
-
-    }
 
     object Time {
         fun getTimestampText(nowTimestamp: Long, timestamp: Long): String {

@@ -1,9 +1,9 @@
 package com.fglshm.instagramclone.register
 
 import android.os.Bundle
+import com.fglshm.extensions2.transact
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseActivity
-import com.fglshm.instagramclone.extension.transact
 
 class RegisterActivity : BaseActivity() {
 

@@ -1,6 +1,5 @@
 package com.fglshm.instagramclone.base
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -33,10 +32,6 @@ abstract class BaseRecyclerAdapter<T> : RecyclerView.Adapter<ItemViewHolder>() {
     fun clear() {
         itemList.clear()
         notifyDataSetChanged()
-    }
-
-    fun showLog(message: Any?) {
-        Log.d(logTag, message?.toString() ?: "no message")
     }
 
 }

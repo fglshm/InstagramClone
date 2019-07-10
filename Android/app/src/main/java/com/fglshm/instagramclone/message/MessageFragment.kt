@@ -13,7 +13,6 @@ class MessageFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.setOnClickListener {
-            showLog("[ onViewCreated ]")
         }
     }
 

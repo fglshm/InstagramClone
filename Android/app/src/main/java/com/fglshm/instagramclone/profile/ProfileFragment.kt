@@ -4,16 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.core.view.postDelayed
+import com.fglshm.extensions2.setInvisible
+import com.fglshm.extensions2.setVisible
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseFragment
-import com.fglshm.instagramclone.extension.setInvisible
-import com.fglshm.instagramclone.extension.setVisible
 import com.fglshm.instagramclone.main.MainActivity
 import com.fglshm.instagramclone.profile.profileedit.ProfileEditActivity
 import com.fglshm.instagramclone.register.RegisterActivity
-import com.github.kittinunf.fuel.android.extension.responseJson
-import com.github.kittinunf.fuel.httpGet
-import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : BaseFragment() {

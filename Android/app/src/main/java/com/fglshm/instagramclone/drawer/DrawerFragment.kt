@@ -21,9 +21,6 @@ class DrawerFragment : BaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
-        view.setOnClickListener {
-            showLog("HHH???")
-        }
     }
 
     private fun setupRecyclerView() {
@@ -33,7 +30,6 @@ class DrawerFragment : BaseFragment() {
         }
         mAdapter.addAll(drawerItems())
         mRecyclerView.setOnClickListener {
-            showLog("[ mRecyclerView ]")
         }
     }
 

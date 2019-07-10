@@ -15,7 +15,6 @@ class MainActivity : BaseActivity(), MainContract.View {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupViewPager()
-
     }
 
     private fun setupViewPager() {

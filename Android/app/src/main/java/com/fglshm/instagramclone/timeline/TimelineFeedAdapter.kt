@@ -14,6 +14,7 @@ import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseRecyclerAdapter
 import com.fglshm.instagramclone.viewholder.ItemViewHolder
 import kotlinx.android.synthetic.main.recyclerview_feed_fragment_timeline.view.*
+import kotlin.reflect.KClass
 
 class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
 

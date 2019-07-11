@@ -1,20 +1,19 @@
 package com.fglshm.instagramclone.timeline
 
 import android.graphics.Color
-import android.text.Html
-import android.text.SpannableString
-import android.text.Spanned
-import android.text.TextPaint
+import android.text.*
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.View
+import com.fglshm.extensions2.setInvisible
+import com.fglshm.extensions2.setVisible
 import com.fglshm.extensions2.showLogD
 import com.fglshm.extensions2.showToastInCenter
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseRecyclerAdapter
 import com.fglshm.instagramclone.viewholder.ItemViewHolder
 import kotlinx.android.synthetic.main.recyclerview_feed_fragment_timeline.view.*
-import kotlin.reflect.KClass
+
 
 class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
 
@@ -33,8 +32,7 @@ class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
             val clickableSpan = object : ClickableSpan() {
                 override fun onClick(widget: View) {
                     txt_caption_feed.highlightColor = Color.TRANSPARENT
-                    txt_caption_feed.text.subSequence(0, username.length).toString().showToastInCenter(context)
-                    txt_caption_feed.maxLines = Integer.MAX_VALUE
+                    "To Profile Page".showToastInCenter(context)
                 }
 
                 override fun updateDrawState(ds: TextPaint) {
@@ -43,9 +41,20 @@ class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
                 }
             }
             val ss = SpannableString(Html.fromHtml(caption, 0))
-            ss.setSpan(clickableSpan, 0, username.length, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
+            ss.setSpan(clickableSpan, 0, username.length.minus(1), Spanned.SPAN_INCLUSIVE_INCLUSIVE)
             txt_caption_feed.text = ss
             txt_caption_feed.movementMethod = LinkMovementMethod.getInstance()
+            txt_caption_feed.post {
+                if (txt_caption_feed.lineCount > 2) {
+                    txt_more_feed.setVisible()
+                } else {
+                    txt_more_feed.setInvisible()
+                }
+            }
+            txt_more_feed.setOnClickListener {
+                txt_caption_feed.maxLines = Integer.MAX_VALUE
+                txt_more_feed.setInvisible()
+            }
         }
     }
 

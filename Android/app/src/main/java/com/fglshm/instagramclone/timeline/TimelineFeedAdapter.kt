@@ -1,9 +1,14 @@
 package com.fglshm.instagramclone.timeline
 
+import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.content.Context
 import android.graphics.Color
 import android.text.*
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
+import android.view.ContextMenu
+import android.view.LayoutInflater
 import android.view.View
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
@@ -12,10 +17,13 @@ import com.fglshm.extensions2.showToastInCenter
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseRecyclerAdapter
 import com.fglshm.instagramclone.viewholder.ItemViewHolder
+import kotlinx.android.synthetic.main.popup_feed_more.view.*
 import kotlinx.android.synthetic.main.recyclerview_feed_fragment_timeline.view.*
 
 
-class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
+class TimelineFeedAdapter(
+    private val mContext: Context
+) : BaseRecyclerAdapter<String>() {
 
     private val cls = TimelineFeedAdapter::class
     override val logTag: String = TimelineFeedAdapter::class.java.simpleName
@@ -65,8 +73,21 @@ class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
         }
     }
 
+    @SuppressLint("InflateParams")
     private fun handleMore(position: Int) {
-        cls.showLogD(position)
+        val builder = AlertDialog.Builder(mContext)
+        val popupView = LayoutInflater.from(mContext).inflate(R.layout.popup_feed_more, null)
+        builder.setView(popupView)
+        val dialog = builder.create()
+        dialog.show()
+        popupView.apply {
+            txt_report_feed_more.setOnClickListener { }
+            txt_copy_feed_more.setOnClickListener { }
+            txt_on_notif_feed_more.setOnClickListener { }
+            txt_share_feed_more.setOnClickListener { }
+            txt_unfollow_feed_more.setOnClickListener { }
+            txt_mute_feed_more.setOnClickListener { }
+        }
     }
 
 }

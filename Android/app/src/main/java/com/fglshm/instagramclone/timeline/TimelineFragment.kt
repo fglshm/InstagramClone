@@ -21,7 +21,7 @@ class TimelineFragment : BaseFragment() {
     private val mStoryRecyclerView by lazy { recycler_story_fragment_timeline }
     private val mStoryAdapter by lazy { TimelineStoryAdapter() }
     private val mFeedRecyclerView by lazy { recycler_feed_fragment_timeline }
-    private val mFeedAdapter by lazy { TimelineFeedAdapter() }
+    private val mFeedAdapter by lazy { TimelineFeedAdapter(mContext) }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -23,15 +23,6 @@ class TimelineFragment : BaseFragment() {
     private val mFeedRecyclerView by lazy { recycler_feed_fragment_timeline }
     private val mFeedAdapter by lazy { TimelineFeedAdapter() }
 
-    private val scrollListener by lazy {
-        object : RecyclerView.OnScrollListener() {
-            override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
-                super.onScrolled(recyclerView, dx, dy)
-                cls.showLogD(dy)
-            }
-        }
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
@@ -61,7 +52,6 @@ class TimelineFragment : BaseFragment() {
         repeat(10) {
             mFeedAdapter.add("")
         }
-        mFeedRecyclerView.addOnScrollListener(scrollListener)
     }
 
 }

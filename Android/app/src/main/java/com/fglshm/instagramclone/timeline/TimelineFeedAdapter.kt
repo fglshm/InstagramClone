@@ -7,7 +7,6 @@ import android.text.style.ClickableSpan
 import android.view.View
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
-import com.fglshm.extensions2.showLogD
 import com.fglshm.extensions2.showToastInCenter
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.base.BaseRecyclerAdapter
@@ -52,6 +51,10 @@ class TimelineFeedAdapter : BaseRecyclerAdapter<String>() {
                 }
             }
             txt_more_feed.setOnClickListener {
+                txt_caption_feed.maxLines = Integer.MAX_VALUE
+                txt_more_feed.setInvisible()
+            }
+            txt_caption_feed.setOnClickListener {
                 txt_caption_feed.maxLines = Integer.MAX_VALUE
                 txt_more_feed.setInvisible()
             }

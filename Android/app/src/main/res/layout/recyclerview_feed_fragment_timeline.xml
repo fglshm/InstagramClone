@@ -79,7 +79,7 @@
         android:id="@+id/img_btn_comment_feed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_comment"
         app:layout_constraintBottom_toBottomOf="@id/img_btn_like_feed"
@@ -90,7 +90,7 @@
         android:id="@+id/img_btn_share_feed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="16dp"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_send"
         app:layout_constraintBottom_toBottomOf="@id/img_btn_comment_feed"
@@ -142,5 +142,93 @@
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@id/txt_caption_feed"
         app:layout_constraintTop_toBottomOf="@id/txt_caption_feed" />
+
+    <TextView
+        android:id="@+id/txt_view_comment_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="View all 10 comments"
+        android:textColor="@color/colorDarkerGray"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/txt_caption_feed"
+        app:layout_constraintTop_toBottomOf="@id/txt_more_feed" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_add_comment_feed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="@id/txt_caption_feed"
+        app:layout_constraintStart_toStartOf="@id/txt_view_comment_feed"
+        app:layout_constraintTop_toBottomOf="@id/txt_view_comment_feed">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile_add_comment_feed"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/person12"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Add a comment..."
+            android:textColor="@color/colorDarkerGray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/img_profile_add_comment_feed"
+            app:layout_constraintStart_toEndOf="@id/img_profile_add_comment_feed"
+            app:layout_constraintTop_toTopOf="@id/img_profile_add_comment_feed" />
+
+        <TextView
+            android:id="@+id/txt_heart_add_comment_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="❤️️"
+            android:textColor="@color/colorDarkerGray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_add_comment_feed"
+            app:layout_constraintEnd_toStartOf="@+id/txt_happy_add_comment_feed"
+            app:layout_constraintTop_toTopOf="@id/img_add_comment_feed" />
+
+        <TextView
+            android:id="@+id/txt_happy_add_comment_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="🙌"
+            android:textColor="@color/colorDarkerGray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_add_comment_feed"
+            app:layout_constraintEnd_toStartOf="@+id/img_add_comment_feed"
+            app:layout_constraintTop_toTopOf="@id/img_add_comment_feed" />
+
+        <ImageView
+            android:id="@+id/img_add_comment_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_comment"
+            android:tint="@color/colorDarkerGray"
+            app:layout_constraintBottom_toBottomOf="@id/img_profile_add_comment_feed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/img_profile_add_comment_feed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt_date_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="3 hours ago"
+        android:textColor="@color/colorDarkerGray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/txt_view_comment_feed"
+        app:layout_constraintTop_toBottomOf="@id/layout_add_comment_feed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

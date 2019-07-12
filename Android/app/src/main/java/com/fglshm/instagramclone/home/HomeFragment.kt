@@ -1,5 +1,6 @@
 package com.fglshm.instagramclone.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.fglshm.extensions2.showLogD
@@ -9,6 +10,7 @@ import com.fglshm.instagramclone.common.base.BaseFragment
 import com.fglshm.instagramclone.main.MainActivity
 import com.fglshm.instagramclone.main.MainContract
 import com.fglshm.instagramclone.notification.NotificationFragment
+import com.fglshm.instagramclone.post.PostActivity
 import com.fglshm.instagramclone.profile.ProfileFragment
 import com.fglshm.instagramclone.search.SearchFragment
 import com.fglshm.instagramclone.timeline.TimelineFragment
@@ -53,57 +55,51 @@ class HomeFragment : BaseFragment() {
 
     private fun observeBottomNavigation() {
         mNavigation.setOnNavigationItemSelectedListener {
-            cls.showLogD(currentFragment)
             when (it.itemId) {
                 R.id.navigation_home -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(true)
-                    if (currentFragment !is TimelineFragment) {
-                        childFragmentManager.transact {
-                            hide(currentFragment)
-                            show(timelineFragment)
-                        }
-                        currentFragment = timelineFragment
-                    }
+                    handleNavigation(timelineFragment)
                     true
                 }
                 R.id.navigation_search -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
-                    if (currentFragment !is SearchFragment) {
-                        childFragmentManager.transact {
-                            hide(currentFragment)
-                            show(searchFragment)
-                        }
-                        currentFragment = searchFragment
-                    }
+                    handleNavigation(searchFragment)
                     true
                 }
                 R.id.navigation_post -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
+                    showPostActivity()
                     false
                 }
                 R.id.navigation_like -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
-                    if (currentFragment !is NotificationFragment) {
-                        childFragmentManager.transact {
-                            hide(currentFragment)
-                            show(notificationFragment)
-                        }
-                        currentFragment = notificationFragment
-                    }
+                    handleNavigation(notificationFragment)
                     true
                 }
                 else -> {
                     ((mActivity as MainActivity) as MainContract.View).setViewPagerState(false)
-                    if (currentFragment !is ProfileFragment) {
-                        childFragmentManager.transact {
-                            hide(currentFragment)
-                            show(profileFragment)
-                        }
-                        currentFragment = profileFragment
-                    }
+                    handleNavigation(profileFragment)
                     true
                 }
             }
+        }
+    }
+
+    private fun handleNavigation(newFragment: BaseFragment) {
+        if (currentFragment != newFragment) {
+            childFragmentManager.transact {
+                hide(currentFragment)
+                show(newFragment)
+            }
+            currentFragment = newFragment
+        }
+    }
+
+    private fun showPostActivity() {
+        val intent = Intent(mContext, PostActivity::class.java)
+        mActivity.apply {
+            startActivity(intent)
+            overridePendingTransition(R.anim.enter_from_bottom, R.anim.fade_out)
         }
     }
 

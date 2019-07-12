@@ -1,4 +1,4 @@
-package com.fglshm.instagramclone.base
+package com.fglshm.instagramclone.common.base
 
 import android.content.Context
 import android.os.Bundle

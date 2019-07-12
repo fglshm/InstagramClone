@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".application.App"
+        android:name="com.fglshm.instagramclone.common.application.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -29,7 +29,14 @@
         <activity
             android:name=".profile.profileedit.ProfileEditActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".register.RegisterActivity" />
+
+        <activity
+            android:name=".register.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".post.PostActivity"
+            android:screenOrientation="portrait" />
 
     </application>
 

@@ -5,7 +5,7 @@ import android.view.View
 import androidx.recyclerview.widget.GridLayoutManager
 import com.fglshm.extensions2.transact
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseFragment
+import com.fglshm.instagramclone.common.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_profile_gallery.*
 
 class ProfileGalleryFragment : BaseFragment() {

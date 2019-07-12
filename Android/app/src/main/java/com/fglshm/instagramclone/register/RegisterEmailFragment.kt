@@ -6,7 +6,7 @@ import android.view.inputmethod.EditorInfo
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseFragment
+import com.fglshm.instagramclone.common.base.BaseFragment
 import kotlinx.android.synthetic.main.fragment_register_email.*
 
 class RegisterEmailFragment : BaseFragment() {

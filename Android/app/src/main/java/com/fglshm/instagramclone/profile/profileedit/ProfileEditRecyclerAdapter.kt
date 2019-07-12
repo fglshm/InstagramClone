@@ -1,8 +1,8 @@
 package com.fglshm.instagramclone.profile.profileedit
 
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseRecyclerAdapter
-import com.fglshm.instagramclone.viewholder.ItemViewHolder
+import com.fglshm.instagramclone.common.base.BaseRecyclerAdapter
+import com.fglshm.instagramclone.common.viewholder.ItemViewHolder
 import kotlinx.android.synthetic.main.recyclerview_profile_edit.view.*
 
 class ProfileEditRecyclerAdapter : BaseRecyclerAdapter<DetailItem>() {

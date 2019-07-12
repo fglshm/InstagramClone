@@ -7,16 +7,14 @@ import android.graphics.Color
 import android.text.*
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
-import android.view.ContextMenu
 import android.view.LayoutInflater
 import android.view.View
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
-import com.fglshm.extensions2.showLogD
 import com.fglshm.extensions2.showToastInCenter
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseRecyclerAdapter
-import com.fglshm.instagramclone.viewholder.ItemViewHolder
+import com.fglshm.instagramclone.common.base.BaseRecyclerAdapter
+import com.fglshm.instagramclone.common.viewholder.ItemViewHolder
 import kotlinx.android.synthetic.main.popup_feed_more.view.*
 import kotlinx.android.synthetic.main.recyclerview_feed_fragment_timeline.view.*
 

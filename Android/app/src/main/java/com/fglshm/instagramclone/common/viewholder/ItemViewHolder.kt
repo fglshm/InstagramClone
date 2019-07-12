@@ -1,4 +1,4 @@
-package com.fglshm.instagramclone.viewholder
+package com.fglshm.instagramclone.common.viewholder
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

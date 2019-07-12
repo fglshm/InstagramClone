@@ -4,9 +4,8 @@ import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import com.fglshm.extensions2.screenWidth
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseRecyclerAdapter
-import com.fglshm.instagramclone.utils.Utils
-import com.fglshm.instagramclone.viewholder.ItemViewHolder
+import com.fglshm.instagramclone.common.base.BaseRecyclerAdapter
+import com.fglshm.instagramclone.common.viewholder.ItemViewHolder
 
 class ProfileGalleryRecyclerAdapter(
     private val context: Context

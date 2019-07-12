@@ -2,7 +2,7 @@ package com.fglshm.instagramclone.main
 
 import android.os.Bundle
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseActivity
+import com.fglshm.instagramclone.common.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity(), MainContract.View {

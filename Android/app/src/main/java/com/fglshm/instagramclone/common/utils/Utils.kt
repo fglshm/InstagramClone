@@ -1,4 +1,4 @@
-package com.fglshm.instagramclone.utils
+package com.fglshm.instagramclone.common.utils
 
 object Utils {
 

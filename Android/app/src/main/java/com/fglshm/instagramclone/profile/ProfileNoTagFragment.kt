@@ -1,7 +1,7 @@
 package com.fglshm.instagramclone.profile
 
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseFragment
+import com.fglshm.instagramclone.common.base.BaseFragment
 
 class ProfileNoTagFragment : BaseFragment() {
 

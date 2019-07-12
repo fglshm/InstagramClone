@@ -1,4 +1,4 @@
-package com.fglshm.instagramclone.widget
+package com.fglshm.instagramclone.common.widget
 
 import android.annotation.SuppressLint
 import android.content.Context

@@ -3,7 +3,7 @@ package com.fglshm.instagramclone.camera
 import android.os.Bundle
 import android.view.View
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseFragment
+import com.fglshm.instagramclone.common.base.BaseFragment
 
 class CameraFragment : BaseFragment() {
 

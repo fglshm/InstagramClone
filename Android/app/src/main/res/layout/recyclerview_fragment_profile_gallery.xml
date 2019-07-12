@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.fglshm.instagramclone.widget.SquareImage
+    <com.fglshm.instagramclone.common.widget.SquareImage
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"

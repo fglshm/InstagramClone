@@ -4,9 +4,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseFragment
-import com.fglshm.instagramclone.base.BaseRecyclerAdapter
-import com.fglshm.instagramclone.viewholder.ItemViewHolder
+import com.fglshm.instagramclone.common.base.BaseFragment
+import com.fglshm.instagramclone.common.base.BaseRecyclerAdapter
+import com.fglshm.instagramclone.common.viewholder.ItemViewHolder
 import kotlinx.android.synthetic.main.fragment_drawer.*
 import kotlinx.android.synthetic.main.recyclerview_fragment_drawer.view.*
 

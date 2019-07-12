@@ -6,8 +6,9 @@ import android.view.View
 import androidx.core.view.postDelayed
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
+import com.fglshm.extensions2.showLogD
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseFragment
+import com.fglshm.instagramclone.common.base.BaseFragment
 import com.fglshm.instagramclone.main.MainActivity
 import com.fglshm.instagramclone.profile.profileedit.ProfileEditActivity
 import com.fglshm.instagramclone.register.RegisterActivity
@@ -15,6 +16,7 @@ import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : BaseFragment() {
 
+    private val cls = ProfileFragment::class
     override val logTag: String = ProfileFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_profile
 
@@ -26,6 +28,7 @@ class ProfileFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        cls.showLogD("[ onViewCreated ]")
 
         // ユーザー情報を取得するまで ProgressBar を表示させる
         // 取得後に、ProgressBar を非表示にする

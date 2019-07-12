@@ -6,7 +6,7 @@ import com.fglshm.extensions2.doAfter
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
 import com.fglshm.instagramclone.R
-import com.fglshm.instagramclone.base.BaseActivity
+import com.fglshm.instagramclone.common.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_profile_edit.*
 
 class ProfileEditActivity : BaseActivity() {

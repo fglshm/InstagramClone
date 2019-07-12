@@ -1,9 +1,9 @@
-package com.fglshm.instagramclone.base
+package com.fglshm.instagramclone.common.base
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.fglshm.instagramclone.viewholder.ItemViewHolder
+import com.fglshm.instagramclone.common.viewholder.ItemViewHolder
 
 abstract class BaseRecyclerAdapter<T> : RecyclerView.Adapter<ItemViewHolder>() {
 

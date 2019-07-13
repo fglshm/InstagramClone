@@ -9,8 +9,10 @@ import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.LayoutInflater
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import com.fglshm.extensions2.setInvisible
 import com.fglshm.extensions2.setVisible
+import com.fglshm.extensions2.showLogD
 import com.fglshm.extensions2.showToastInCenter
 import com.fglshm.instagramclone.R
 import com.fglshm.instagramclone.common.base.BaseRecyclerAdapter
@@ -67,6 +69,11 @@ class TimelineFeedAdapter(
             }
             img_btn_more_feed.setOnClickListener {
                 handleMore(position)
+            }
+            layout_add_comment_feed.setOnClickListener {
+                cls.showLogD("show comment input")
+                val imm = mContext.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                imm.toggleSoftInputFromWindow(it.windowToken, InputMethodManager.SHOW_FORCED, 0)
             }
         }
     }

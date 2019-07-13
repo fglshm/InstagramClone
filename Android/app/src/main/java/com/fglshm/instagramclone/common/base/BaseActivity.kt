@@ -1,6 +1,7 @@
 package com.fglshm.instagramclone.common.base
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.fglshm.extensions2.screenHeight
 import com.fglshm.extensions2.screenWidth
@@ -18,6 +19,10 @@ abstract class BaseActivity : AppCompatActivity() {
         setContentView(getLayout())
         screenWidth = screenWidth()
         screenHeight = screenHeight()
+    }
+
+    protected fun showLog(message: Any?) {
+        Log.d(logTag, message?.toString() ?: "NO TEXT")
     }
 
 }

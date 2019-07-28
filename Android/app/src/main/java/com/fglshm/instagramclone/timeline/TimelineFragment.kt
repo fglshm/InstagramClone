@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.fragment_timeline.*
 class TimelineFragment : BaseFragment() {
 
     private val cls = TimelineFragment::class
-    override val logTag: String = TimelineFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_timeline
 
     private val mRefresh by lazy { refresh_fragment_timeline }

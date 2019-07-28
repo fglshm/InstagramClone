@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment
 
 abstract class BaseFragment : Fragment() {
 
-    abstract val logTag: String
     abstract fun getLayout(): Int
 
     protected lateinit var mContext: Context
@@ -28,10 +27,6 @@ abstract class BaseFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(getLayout(), container, false)
-    }
-
-    protected fun showLog(message: Any?) {
-        Log.d(logTag, message?.toString() ?: "NO TEXT")
     }
 
 }

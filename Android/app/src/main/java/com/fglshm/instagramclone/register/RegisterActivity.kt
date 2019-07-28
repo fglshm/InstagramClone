@@ -7,7 +7,6 @@ import com.fglshm.instagramclone.common.base.BaseActivity
 
 class RegisterActivity : BaseActivity() {
 
-    override val logTag: String = RegisterActivity::class.java.simpleName
     override fun getLayout(): Int = R.layout.activity_register
 
     override fun onCreate(savedInstanceState: Bundle?) {

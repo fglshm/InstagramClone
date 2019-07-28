@@ -8,7 +8,6 @@ import kotlinx.android.synthetic.main.fragment_post_customize.*
 
 class PostCustomizeFragment : BaseFragment() {
 
-    override val logTag: String = PostCustomizeFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_post_customize
 
     private val mCloseButton by lazy { image_button_close_fragment_post_customize }

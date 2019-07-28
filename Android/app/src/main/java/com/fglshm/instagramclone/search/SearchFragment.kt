@@ -9,7 +9,6 @@ import com.fglshm.instagramclone.common.base.BaseFragment
 class SearchFragment : BaseFragment() {
 
     private val cls = SearchFragment::class
-    override val logTag: String = SearchFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_search
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

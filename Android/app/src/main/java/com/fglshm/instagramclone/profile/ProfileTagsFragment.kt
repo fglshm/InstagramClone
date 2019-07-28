@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.fragment_profile_tags.*
 
 class ProfileTagsFragment : BaseFragment() {
 
-    override val logTag: String = ProfileTagsFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_profile_tags
 
     private val mRecyclerView by lazy { recycler_fragment_profile_tags }

@@ -7,7 +7,6 @@ import com.fglshm.instagramclone.common.base.BaseFragment
 
 class CameraFragment : BaseFragment() {
 
-    override val logTag: String = CameraFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_camera
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

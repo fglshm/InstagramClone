@@ -7,7 +7,6 @@ import com.fglshm.instagramclone.common.base.BaseFragment
 
 class MessageFragment : BaseFragment() {
 
-    override val logTag: String = MessageFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_message
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

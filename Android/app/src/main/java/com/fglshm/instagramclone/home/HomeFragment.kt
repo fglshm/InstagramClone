@@ -19,7 +19,6 @@ import kotlinx.android.synthetic.main.fragment_home.*
 class HomeFragment : BaseFragment() {
 
     private val cls = HomeFragment::class
-    override val logTag: String = HomeFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_home
 
     private val containerRes = R.id.container_fragment_home

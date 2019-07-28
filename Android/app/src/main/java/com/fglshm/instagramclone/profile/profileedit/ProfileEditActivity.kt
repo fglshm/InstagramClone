@@ -11,7 +11,6 @@ import kotlinx.android.synthetic.main.activity_profile_edit.*
 
 class ProfileEditActivity : BaseActivity() {
 
-    override val logTag: String = ProfileEditActivity::class.java.simpleName
     override fun getLayout(): Int = R.layout.activity_profile_edit
 
     private val mBackButton by lazy { img_btn_back_activity_profile_edit }

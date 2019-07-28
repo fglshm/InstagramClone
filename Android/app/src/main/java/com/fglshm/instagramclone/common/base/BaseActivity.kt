@@ -8,7 +8,6 @@ import com.fglshm.extensions2.screenWidth
 
 abstract class BaseActivity : AppCompatActivity() {
 
-    abstract val logTag: String
     abstract fun getLayout(): Int
 
     protected var screenWidth = 0
@@ -19,10 +18,6 @@ abstract class BaseActivity : AppCompatActivity() {
         setContentView(getLayout())
         screenWidth = screenWidth()
         screenHeight = screenHeight()
-    }
-
-    protected fun showLog(message: Any?) {
-        Log.d(logTag, message?.toString() ?: "NO TEXT")
     }
 
 }

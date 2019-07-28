@@ -12,7 +12,6 @@ import kotlinx.android.synthetic.main.recyclerview_fragment_drawer.view.*
 
 class DrawerFragment : BaseFragment() {
 
-    override val logTag: String = DrawerFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_drawer
 
     private val mRecyclerView by lazy { recycler_fragment_drawer }

@@ -8,7 +8,6 @@ import kotlinx.android.synthetic.main.fragment_post_select.*
 
 class PostSelectFragment : BaseFragment() {
 
-    override val logTag: String = PostSelectFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_post_select
 
     private val mCloseButton by lazy { image_button_close_fragment_post_select }

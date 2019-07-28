@@ -10,7 +10,6 @@ import kotlinx.android.synthetic.main.fragment_profile_gallery.*
 
 class ProfileGalleryFragment : BaseFragment() {
 
-    override val logTag: String = ProfileGalleryFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_profile_gallery
 
     private val mRecyclerView by lazy { recycler_fragment_profile_gallery }

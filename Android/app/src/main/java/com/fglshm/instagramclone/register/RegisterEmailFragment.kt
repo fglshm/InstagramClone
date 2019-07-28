@@ -11,7 +11,6 @@ import kotlinx.android.synthetic.main.fragment_register_email.*
 
 class RegisterEmailFragment : BaseFragment() {
 
-    override val logTag: String = RegisterEmailFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_register_email
 
     private val mEmailEdit by lazy { edt_email_fragment_register_email }

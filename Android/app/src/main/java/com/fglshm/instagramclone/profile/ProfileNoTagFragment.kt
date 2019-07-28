@@ -5,7 +5,6 @@ import com.fglshm.instagramclone.common.base.BaseFragment
 
 class ProfileNoTagFragment : BaseFragment() {
 
-    override val logTag: String = ProfileNoTagFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_profile_no_tag
 
     companion object {

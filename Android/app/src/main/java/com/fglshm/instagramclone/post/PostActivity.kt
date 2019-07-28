@@ -14,7 +14,6 @@ import com.fglshm.extensions2.doAfter
 
 class PostActivity : BaseActivity(), PostContract {
 
-    override val logTag: String = PostActivity::class.java.simpleName
     override fun getLayout(): Int = R.layout.activity_post
 
     private val containerRes = R.id.container_activity_post

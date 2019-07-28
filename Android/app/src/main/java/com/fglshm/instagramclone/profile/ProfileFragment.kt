@@ -17,7 +17,6 @@ import kotlinx.android.synthetic.main.fragment_profile.*
 class ProfileFragment : BaseFragment() {
 
     private val cls = ProfileFragment::class
-    override val logTag: String = ProfileFragment::class.java.simpleName
     override fun getLayout(): Int = R.layout.fragment_profile
 
     private val mTab by lazy { tab_profile }

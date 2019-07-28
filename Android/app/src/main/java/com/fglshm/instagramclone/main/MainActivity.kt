@@ -7,7 +7,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity(), MainContract.View {
 
-    override val logTag: String = MainActivity::class.java.simpleName
     override fun getLayout(): Int = R.layout.activity_main
 
     private val mViewPager by lazy { pager_activity_main }
